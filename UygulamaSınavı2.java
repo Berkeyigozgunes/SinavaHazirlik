@@ -1,37 +1,37 @@
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
-public class  UygulamaSınavı2{
+public class  UygulamaSÄ±navÄ±2{
 	
 	public static void main(String[] args) {
 		Scanner girdi = new Scanner(System.in);
 		
-		/* Klavyeden girilen bir cümleyi ; 
-		 * A - ters çeviren,
-		 * B - kelime kelime bölen,
-		 * C - içindeki harflerin sayısını veren, bir harfin kaç kez tekrar ettiğini yazdıran bir program yazın. */
+		/* Klavyeden girilen bir cÃ¼mleyi ; 
+		 * A - ters Ã§eviren,
+		 * B - kelime kelime bÃ¶len,
+		 * C - iÃ§indeki harflerin sayÄ±sÄ±nÄ± veren, bir harfin kaÃ§ kez tekrar ettiÄŸini yazdÄ±ran bir program yazÄ±n. */
 		
 		
 		
-		System.out.println(" Lütfen bir cümle giriniz...");
-		String cümle = girdi.nextLine(); 
+		System.out.println(" LÃ¼tfen bir cÃ¼mle giriniz...");
+		String cÃ¼mle = girdi.nextLine(); 
 		
-		int uzunluk = cümle.length();
-		System.out.println("Cümlenizin tersten yazılışı...");
+		int uzunluk = cÃ¼mle.length();
+		System.out.println("CÃ¼mlenizin tersten yazÄ±lÄ±ÅŸÄ±...");
 		
 		for (int i = uzunluk -1  ; i >= 0;  i--){
-			System.out.print(cümle.charAt(i));
+			System.out.print(cÃ¼mle.charAt(i));
 		}
 		
-		/* Burada kullanıcıdan istenilen metnin uzunluğunu " int uzunluk " olarak tanımlıyoruz. Daha sonra 
-		 * for döngüsünde girilen basamak sayısının " -1 " ini ( Çünkü charAt 0 olarak başlar ) int i'ye 
-		 * tanımladıktan sonra i değeri 0'a eşit olana kadar her dönüşte 1 sayı düşürüyoruz. Bu sırada da ekrana her 
-		 * defasında yan yana sondan ilk harfi girdiriyoruz. Böylece tersten yazılışını bulmuş oluyoruz.*/
+		/* Burada kullanÄ±cÄ±dan istenilen metnin uzunluÄŸunu " int uzunluk " olarak tanÄ±mlÄ±yoruz. Daha sonra 
+		 * for dÃ¶ngÃ¼sÃ¼nde girilen basamak sayÄ±sÄ±nÄ±n " -1 " ini ( Ã‡Ã¼nkÃ¼ charAt 0 olarak baÅŸlar ) int i'ye 
+		 * tanÄ±mladÄ±ktan sonra i deÄŸeri 0'a eÅŸit olana kadar her dÃ¶nÃ¼ÅŸte 1 sayÄ± dÃ¼ÅŸÃ¼rÃ¼yoruz. Bu sÄ±rada da ekrana her 
+		 * defasÄ±nda yan yana sondan ilk harfi girdiriyoruz. BÃ¶ylece tersten yazÄ±lÄ±ÅŸÄ±nÄ± bulmuÅŸ oluyoruz.*/
 		
 		
 		String ayrac = " ";
-		StringTokenizer s = new StringTokenizer(cümle,ayrac);
-		System.out.println("\nCümleniz " + s.countTokens() + " kelimeden oluşuyor");
+		StringTokenizer s = new StringTokenizer(cÃ¼mle,ayrac);
+		System.out.println("\nCÃ¼mleniz " + s.countTokens() + " kelimeden oluÅŸuyor");
 		System.out.println("Bu kelimeler = ");
 			
 		while(s.hasMoreTokens()){                
@@ -40,46 +40,46 @@ public class  UygulamaSınavı2{
 												
 		}
 				
-		/* Burada StringTokenizer kütüphanesini ekliyoruz. Bunun amacı kelimeleri ayırmak. Ayraç değişkeni 
-		 * olarak tanımladığımız yerler kelimeleri ayıran parametre olarak gözüküyor ve sistem buna göre 
-		 * oluşan kelime sayısını s.count.Tokens() ile, oluşan kelimeleri ise s.nextToken() ile yazdırıyor. 
-		 * Burada While'in islevini anlamadım ama, o olmadan niçin çalışmadığını */
+		/* Burada StringTokenizer kÃ¼tÃ¼phanesini ekliyoruz. Bunun amacÄ± kelimeleri ayÄ±rmak. AyraÃ§ deÄŸiÅŸkeni 
+		 * olarak tanÄ±mladÄ±ÄŸÄ±mÄ±z yerler kelimeleri ayÄ±ran parametre olarak gÃ¶zÃ¼kÃ¼yor ve sistem buna gÃ¶re 
+		 * oluÅŸan kelime sayÄ±sÄ±nÄ± s.count.Tokens() ile, oluÅŸan kelimeleri ise s.nextToken() ile yazdÄ±rÄ±yor. 
+		 * Burada While'in islevini anlamadÄ±m ama, o olmadan niÃ§in Ã§alÄ±ÅŸmadÄ±ÄŸÄ±nÄ± */
 												   
-		String karakter = cümle;
+		String karakter = cÃ¼mle;
 		
-		System.out.println("Girdiğiniz cümle'nin karakter sayısı hesaplanıyor... =" );
+		System.out.println("GirdiÄŸiniz cÃ¼mle'nin karakter sayÄ±sÄ± hesaplanÄ±yor... =" );
 		System.out.println(karakter.replace(" ", ""));
 				
 		
-		/* Burada " replace" kodu ile metinde ki boşluk kullanılan yerine boşluksuz yapıyoruz. Amaç ise boşluk 
-		 * ile kullanılan karakter sayısının hesabını bozmamak */
+		/* Burada " replace" kodu ile metinde ki boÅŸluk kullanÄ±lan yerine boÅŸluksuz yapÄ±yoruz. AmaÃ§ ise boÅŸluk 
+		 * ile kullanÄ±lan karakter sayÄ±sÄ±nÄ±n hesabÄ±nÄ± bozmamak */
 				
 		
 		int birlesik = karakter.length();
-		System.out.println("Girdiğiniz cümlenin karakter sayısı =" + birlesik);
-	
+		System.out.println("GirdiÄŸiniz cÃ¼mlenin karakter sayÄ±sÄ± =" + birlesik);
 		
-		String alfabe = "ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWYZabcçdefgğhıijklmnoöpqrsştuüvwyz0123456789,.:;!?<>=";
+		
+		String alfabe = "ABCÃ‡DEFGÄHIÄ°JKLMNOÃ–PQRSÅTUÃœVWYZabcÃ§defgÄŸhÄ±ijklmnoÃ¶pqrsÅŸtuÃ¼vwyz0123456789,.:;!?<>=";
 		int[] alfabe_dizisi = new int[alfabe.length()]; 
 		
-		/* Burada alfabede ki bulunan harf / rakam ve işaretleri metin olarak tanımlıyoruz.
-		 * daha sonra bu metnin uzunluğunu ( içinde bulunan verileri ) " alfabe_dizisi" ne eşitliyoruz */
+		/* Burada alfabede ki bulunan harf / rakam ve iÅŸaretleri metin olarak tanÄ±mlÄ±yoruz.
+		 * daha sonra bu metnin uzunluÄŸunu ( iÃ§inde bulunan verileri ) " alfabe_dizisi" ne eÅŸitliyoruz */
 		
-		for (int i = 0; i < cümle.length(); i++) {
+		for (int i = 0; i < cÃ¼mle.length(); i++) {
 			
-			int kontrol = alfabe.indexOf(cümle.charAt(i));
+			int kontrol = alfabe.indexOf(cÃ¼mle.charAt(i));
 			if (kontrol < 0) {continue;};
 			
 			alfabe_dizisi[kontrol]++;
 			
 		}
 			  	
-	    /* Daha sonra cümle uzunluğumuz kadar tekrar edicek bir for döngüsü oluşyuruyoruz. Bu döngü de 0 olarak
-	 	 * tanımladığımız i değeri, girdiğimiz metinden kısa oldukça 1 artıyor. Daha sonra tanımladığımız "charAt(i)" 
-	 	 * fonksiyonu döngü gerçekleştikce sıradan cümledeki karakterleri topluyor ve bu karakterler alfabe dizgisinde var
-		 * mı diye kontrol ediyor. Bu işlemi int kontrol olarak tanımlıyoruz. Eğer ki burada if döngüsüne giren " kontrol " 
-		 * değişkeni "0 " dan küçükse " continue " ile eş geçiyor. Eğer " 0 " dan büyükse tanımladığımız kontrol'ün sayısı
-		 * 1 arttırılıyor.*/
+	        /* Daha sonra cÃ¼mle uzunluÄŸumuz kadar tekrar edicek bir for dÃ¶ngÃ¼sÃ¼ oluÅŸyuruyoruz. Bu dÃ¶ngÃ¼ de 0 olarak
+	 	 * tanÄ±mladÄ±ÄŸÄ±mÄ±z i deÄŸeri, girdiÄŸimiz metinden kÄ±sa oldukÃ§a 1 artÄ±yor. Daha sonra tanÄ±mladÄ±ÄŸÄ±mÄ±z "charAt(i)" 
+	 	 * fonksiyonu dÃ¶ngÃ¼ gerÃ§ekleÅŸtikce sÄ±radan cÃ¼mledeki karakterleri topluyor ve bu karakterler alfabe dizgisinde var
+		 * mÄ± diye kontrol ediyor. Bu iÅŸlemi int kontrol olarak tanÄ±mlÄ±yoruz. EÄŸer ki burada if dÃ¶ngÃ¼sÃ¼ne giren " kontrol " 
+		 * deÄŸiÅŸkeni "0 " dan kÃ¼Ã§Ã¼kse " continue " ile eÅŸ geÃ§iyor. EÄŸer " 0 " dan bÃ¼yÃ¼kse tanÄ±mladÄ±ÄŸÄ±mÄ±z kontrol'Ã¼n sayÄ±sÄ±
+		 * 1 arttÄ±rÄ±lÄ±yor.*/
 			  	 
 		for (int i = 0; i < alfabe_dizisi.length; i++) {
 			if (alfabe_dizisi[i] < 1) {
@@ -88,9 +88,9 @@ public class  UygulamaSınavı2{
 			System.out.println(alfabe.charAt(i)+" harfi "+alfabe_dizisi[i]+" kez tekrar etti.");
 		
 			
-		/* Burada ise alfabe_dizisinin uzunluğuna ulaşana kadar i değişkenini 1 arttıran bir for döngüsü yazıyoruz.Bu döngüde 
-		 * eğer ki alfabe_dizisi[i] 1 den küçükse atlıyor ve yazdırmıyor. Eğer ki " i " 1'i geçerse her seferinde tek tek;
-		 * " ( Metinde kullanılan harf ) harfi ( tekrar sayısı ) kez tekrar etti " gibi bir çıktı yazdırıyor. */
+		/* Burada ise alfabe_dizisinin uzunluÄŸuna ulaÅŸana kadar i deÄŸiÅŸkenini 1 arttÄ±ran bir for dÃ¶ngÃ¼sÃ¼ yazÄ±yoruz.Bu dÃ¶ngÃ¼de 
+		 * eÄŸer ki alfabe_dizisi[i] 1 den kÃ¼Ã§Ã¼kse atlÄ±yor ve yazdÄ±rmÄ±yor. EÄŸer ki " i " 1'i geÃ§erse her seferinde tek tek;
+		 * " ( Metinde kullanÄ±lan harf ) harfi ( tekrar sayÄ±sÄ± ) kez tekrar etti " gibi bir Ã§Ä±ktÄ± yazdÄ±rÄ±yor. */
 		
 		}	
 	}
