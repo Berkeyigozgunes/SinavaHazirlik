@@ -1,0 +1,41 @@
+import java.util.*;
+public class deneme {
+	
+	public static void main(String[] args){
+		Scanner girdi = new Scanner(System.in);
+		
+		System.out.println("Lütfen toplamak istediğiniz sayıları giriniz ");
+		System.out.println("Eğer sisteden çıkmak isterseniz ' dur ' yazmanız yeterlidir");
+		
+		int döngü = 0;
+		int toplam = 0 ;
+		int topla = 0;
+		while(true){
+			
+			System.out.println((döngü + 1 ) + " .sayıyı giriniz");
+			
+
+			topla = girdi.nextInt();
+			girdi.nextLine();
+			System.out.println(toplam + " + " + topla + " = ");
+			toplam += topla;
+			System.out.println(toplam);
+			
+		
+	
+			System.out.println("Devam etmek istiyor musunuz ? ");
+			String islem = girdi.nextLine();
+			
+			if (islem.equals("dur")){
+				System.out.println("Çıkış yapılıyor...");
+				break;
+				}
+			
+			else { döngü ++;
+				
+			}
+		
+		}
+
+	}
+}
