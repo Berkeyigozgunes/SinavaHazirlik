@@ -1,0 +1,21 @@
+import java.util.*;
+public class topla15ekadar {
+
+	public static void main(String[] args){
+		Scanner girdi = new Scanner(System.in);
+		
+		int toplam = 0;
+		int döngü = 0;
+		while (döngü!=15){
+			
+			System.out.println("Lütfen " + (döngü + 1 ) + ".sayiyi giriniz..." );
+			int sayi = girdi.nextInt();
+			System.out.print(toplam + "+ " + sayi +" = " );
+			int i = toplam;
+			toplam += sayi;
+			System.out.println(toplam);
+			döngü ++;
+			
+		}
+	}
+}
