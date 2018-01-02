@@ -1,0 +1,22 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[] args){
+		Scanner giriş = new Scanner(System.in);
+		
+		System.out.println("Lütfen ekrana girilmesini istediğiniz ifadeyi yazınız...");
+		String ifade = giriş.nextLine();
+		
+		System.out.println("Bu ifadeyi ekrana kaç kez yazdırmak istersiniz ? ");
+		int sayi = giriş.nextInt();
+		
+		int i = 0;
+		while(i<=sayi){
+			
+			System.out.println((i+1) + ") " + ifade);
+			
+			i++;
+			
+		}
+	}
+}
