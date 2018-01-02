@@ -1,0 +1,40 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		Scanner faktoriyel = new Scanner(System.in);
+		
+		System.out.println("Lütfen Faktoriyeli hesaplanıcak sayiyi giriniz");
+		int sayi = faktoriyel.nextInt();
+		int sonuc = 1;
+		
+		for( int i = 1 ; i <= sayi ; i++ ){
+			
+			sonuc *= i;
+			System.out.println(" Faktoriyel = " + sonuc + " i =" + i );
+			
+		}
+		
+		System.out.println(" Faktoriyel = " + sonuc);
+		
+	}
+	
+	public static void yol2(String[] args){
+		Scanner scan = new Scanner(System.in);
+		
+		int i = scan.nextInt();
+		int faktoriyel = 1;
+		
+		for(; i > 0 ; i--){
+			
+			faktoriyel *=i;
+			System.out.print(" Faktoriyel = " + faktoriyel );
+			System.out.print(" **** ");
+			System.out.println(" i =" + i );
+			
+			
+		}
+		
+		System.out.println(" Girdiğiniz " + i + " sayisinin faktoriyeli = " + faktoriyel);
+	}
+}
