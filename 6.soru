@@ -1,0 +1,24 @@
+public class deneme {
+
+	public static void main(String[] args){
+		
+		int sayım= 0;
+		int toplam =0;
+		
+		System.out.println("1 ile 1000 arasındaki 5 e bölünen ve 7 ye bölünemeyen tam sayılar...");
+		for(int i = 1; i<=1000;i++ ){
+			
+			if((i%5==0) && (i%7!=0)){
+				
+				System.out.println(i);
+				toplam +=i;
+				i ++;
+				sayım ++;
+				
+			}
+			
+		}
+		System.out.println("1 - 1000 arasında 5 e bölünen ve 7 ye bölünemeyen " + sayım + " sayı vardır. ");
+		System.out.println("Bu sayıların toplamı =" + toplam + "'dır.");
+	}
+}
