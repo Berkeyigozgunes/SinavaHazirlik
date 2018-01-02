@@ -1,0 +1,38 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[] args){
+		Scanner giris = new Scanner(System.in);
+		
+		int a,b,c;
+		int carpım;
+		int toplam;
+		int sonuç;
+		
+		System.out.println("Lütfen 3 basamaklı bir sayı giriniz");
+		int sayi = giris.nextInt();
+		
+		a = sayi % 1000;
+		a /= 100;
+		System.out.println("Girdiğiniz sayının 100ler basamağı = " + a );
+		b = sayi % 100; 
+		b /= 10;
+		System.out.println("Girdiğiniz sayının 10lar basamağı = " + b);
+		
+		c = sayi % 10;
+		System.out.println("Girdiğiniz sayının 1ler basamağı = " + c );
+		
+		carpım = a*b*c;
+		
+		System.out.println("Girilen sayıların carpımları sonucu =" + carpım);
+		
+		toplam = a+b+c;
+		System.out.println("Girilen sayıların toplamları sonucu ise =" + toplam);
+		
+		sonuç = carpım % toplam;
+		
+		System.out.println("Girilen sayıların basamakları carpımının, toplamlarına bölümünden kalan =" + sonuç);
+		
+			
+	}
+}
