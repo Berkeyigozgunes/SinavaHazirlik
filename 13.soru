@@ -1,0 +1,35 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		
+		
+		System.out.println("1 ile 1000 arasındaki asal sayılar ...");
+		
+		int asal;
+		int döngü = 1;
+		int sayı = 0;
+        for(int i = 2; i <= 1000; i++){
+        	
+            asal = 0;
+            
+            for(int a=2; a<=i/2; a++){
+            	
+                if((i % a)==0) {
+                	
+                	asal++ ;
+                
+                }
+            }
+            if((asal)==0) {
+            	
+            	System.out.println(döngü + ". asal sayı = " + i);
+            	döngü++;
+            	sayı ++;
+            	
+            	
+            }
+        }
+        System.out.println(" 1 - 1000 arasında " + sayı + " asal sayı vardır.");
+    }
+} 
