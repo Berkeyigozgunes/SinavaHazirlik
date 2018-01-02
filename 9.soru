@@ -1,0 +1,34 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+	    	Scanner klavye = new Scanner(System.in);
+	    	
+	    	int döngü = 1;
+	    	
+	    	System.out.println("Lütfen sorgulamak istediğiniz sayıları giriniz");
+	    	System.out.println("Çıkış yapmak istediğiniz zaman ' q ' ya basınız");
+	    while(true){
+	    	
+	    	
+	    	int girilen = klavye.nextInt();
+	    	
+	    	if((girilen%2)==0){
+	    		System.out.println(döngü + ". sayınız (" + girilen + ") çift bir sayıdır.");
+	    		döngü ++;
+	    	}
+	    	else if((girilen%2)!=0){
+	    		System.out.println(döngü + ".sayınız(" + girilen + ") tek bir sayıdır");
+	    		döngü ++;
+	    	}
+	    	
+	    	klavye.nextLine();
+	    	String cıkıs = klavye.nextLine();
+	    	
+	    		if(cıkıs.equals("q")){
+	    			System.out.println("Sistemden çıkılıyor...");
+	    			break;
+	    		}
+	    }    
+	}
+}
