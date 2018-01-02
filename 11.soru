@@ -1,0 +1,13 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		Scanner klavye = new Scanner(System.in);
+		
+		System.out.println("Lütfen büyük harfe çevirmek istediğiniz metni giriniz...");
+		String metin = klavye.nextLine();
+		String büyük = metin.toUpperCase();
+		System.out.println("Büyük harfe çevirilen metininiz...\n" + büyük);
+		
+	}
+}
