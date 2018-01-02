@@ -1,0 +1,20 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		Scanner girdi = new Scanner(System.in);
+		
+			System.out.println(" Lütfen bir cümle giriniz...");
+			String cümle = girdi.nextLine(); 
+			
+			int uzunluk = cümle.length();
+			System.out.println("Cümlenizin tersten yazılışı...");
+			
+			
+			for (int i = uzunluk -1  ; i >= 0;  i--){
+				
+				System.out.print(cümle.charAt(i));
+				
+			}
+	}
+}
