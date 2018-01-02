@@ -1,0 +1,29 @@
+
+public class deneme {
+
+	public static void main(String[] args){
+		
+		
+		System.out.println(" 7 ve 2'ye tam bölüneblen, 45 ile 225 arasındaki sayılar ..:");
+		
+		int i = 45;
+		int toplam = 0;
+		while(i<=225){
+			
+			
+			if((i%7 == 0) && ( i%2 == 0)){
+				
+				System.out.println(i );
+				
+				toplam += i;
+				i++;
+			}
+			else{ 
+				i++;
+			}
+		
+			
+		}
+		System.out.println("Bu sayıların toplamı =" + toplam);
+	}
+}
