@@ -1,0 +1,43 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+	    	Scanner klavye=new Scanner(System.in);
+	    	       
+	        System.out.print("En fazla 4 basamaklı bir sayi giriniz:");
+	        int sayi=klavye.nextInt();
+	        
+	        
+	        if ((sayi<=9999) && (sayi>0)){
+	        	
+	        int bolen;
+	        int boleninboleni; 
+	        boolean asal=true;
+	        
+	        	for(bolen=2;bolen<sayi;bolen++){
+	            
+	        		if((sayi%bolen)==0){
+	        		
+	        			for(boleninboleni=2;boleninboleni<bolen;boleninboleni++){
+	        		
+	        				if((bolen%boleninboleni)==0){
+	        				
+	                    boleninboleni=boleninboleni+bolen;
+	                    asal=false;
+	 						}
+	        			
+	        			}
+	        	if(asal==true)
+	                System.out.println(bolen);
+	        	
+	            	}
+	        	}
+	        }
+	        
+	        else {
+	        	System.out.println("Yanlış bir sayı girdiniz...");
+	        	return ;
+	        }
+	        
+	}
+}
