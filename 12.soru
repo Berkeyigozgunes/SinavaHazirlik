@@ -1,0 +1,28 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		Scanner klavye = new Scanner(System.in);
+		
+		System.out.println("Lütfen 3 adet sayı giriniz;");
+		int a = klavye.nextInt();
+		int b = klavye.nextInt();
+		int c = klavye.nextInt();
+		int maks;
+		
+		if ((a > b) && (a>c)){
+			
+			maks = a;
+		}
+		else if ((b > a ) && (b>c)){
+			
+			maks = b;
+		}
+		else {
+			
+			maks = c;
+		}
+		
+		System.out.println("Girdiğiniz 3 sayının en büyüğü = " + maks + "'dır.");
+	}
+}
