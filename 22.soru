@@ -1,0 +1,62 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class deneme2 {
+
+	public static void main(String[] args){
+		Scanner iste = new Scanner(System.in);
+		
+		System.out.println("10 adet tahmin hakkınızın olduğu program başlatılıyor.");
+		int hak = 10;
+		while (hak >= 0){
+			
+			int gerekensayi;
+			int soylenensayi;
+			int döngü = 1;
+			boolean bittimi=true;
+			
+			Random rastgele = new Random();
+		
+			gerekensayi = rastgele.nextInt(100);
+			
+			while(bittimi){
+				
+				System.out.println("Deneme " + döngü);
+				
+				soylenensayi = iste.nextInt();
+				
+				if(gerekensayi==soylenensayi){
+					
+					System.out.println("Rastgele sayıyı (" + gerekensayi + ") , " + döngü + ".denemede buldun.");
+					bittimi = false;
+					
+				}
+				else if(gerekensayi<soylenensayi){
+					
+					System.out.println("Başarısız deneme. " + döngü + ". denemen, rastgele sayıdan büyük.");
+					hak --;
+					döngü ++;
+					
+				}
+				else if(gerekensayi>soylenensayi){
+					
+					System.out.println("Başarısız deneme. " + döngü + ".denemen, rastgele sayıdan küçük.");
+					hak --;
+					döngü ++;
+				}
+				else { 
+					
+					System.out.println("Hatalı bir sayı girdiniz. Lütfen tekrar deneyiniz.");
+					
+				}
+					if(hak == 0){
+						
+						System.out.println("Hakkınız kalmamıştır. Lütfen daha sonra tekrar gelin...");
+						break;
+					}
+			}
+			
+		}
+	}
+}
