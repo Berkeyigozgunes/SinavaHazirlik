@@ -1,0 +1,21 @@
+import java.util.*;
+public class deneme {
+
+	public static void main(String[]args){
+		Scanner girdi = new Scanner(System.in);
+		
+			System.out.println(" Lütfen bir cümle giriniz...");
+			String cümle = girdi.nextLine(); 
+			
+			String ayrac = " ";
+			StringTokenizer s = new StringTokenizer(cümle,ayrac);
+			System.out.println("\nCümleniz " + s.countTokens() + " kelimeden oluşuyor");
+			System.out.println("Bu kelimeler = ");
+				
+			while(s.hasMoreTokens()){                
+													  
+			System.out.println(s.nextToken());
+			
+			}
+	}
+}
